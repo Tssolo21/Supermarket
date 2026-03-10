@@ -8,7 +8,7 @@ namespace hero::business_logic {
 using Product = hero::models::Product;
 using ProductId = Product::ProductId;
 
-ProductService::ProductService(std::unique_ptr<dal::IDalProduct> dal) : dal_(std::move(dal)) {}
+ProductService::ProductService(std::shared_ptr<dal::IDalProduct> dal) : dal_(std::move(dal)) {}
 
 Product ProductService::createProduct(const std::string& name, const std::string& sku,
                                       double price, int stock, ProductId category_id,

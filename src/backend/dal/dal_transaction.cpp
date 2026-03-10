@@ -87,7 +87,36 @@ std::vector<Transaction> DalTransaction::getBetweenDates(int64_t start, int64_t 
 }
 
 std::optional<Transaction> DalTransaction::getById(Transaction::TransactionId id) {
-    return std::nullopt; // Omitted
+    auto& db = Database::getInstance();
+    createTableIfNotExists();
+
+    std::stringstream sql;
+    sql << "SELECT id, total_amount, payment_method, timestamp, cashier, items_json FROM transactions "
+        << "WHERE id = ?";
+
+    auto stmt = db.prepareStatement(sql.str());
+    if (!stmt) return std::nullopt;
+
+    sqlite3_bind_int64(stmt, 1, id);
+
+    if (sqlite3_step(stmt) == SQLITE_ROW) {
+        nlohmann::json full_tx;
+        full_tx["id"] = sqlite3_column_int64(stmt, 0);
+        full_tx["total_amount"] = sqlite3_column_double(stmt, 1);
+        full_tx["payment_method"] = sqlite3_column_int(stmt, 2);
+        full_tx["timestamp"] = sqlite3_column_int64(stmt, 3);
+        const char* cashier = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4));
+        full_tx["cashier"] = cashier ? cashier : "";
+        full_tx["items"] = nlohmann::json::parse(reinterpret_cast<const char*>(sqlite3_column_text(stmt, 5)));
+
+        try {
+            auto tx = Transaction::fromJson(full_tx);
+            db.finalizeStatement(stmt);
+            return tx;
+        } catch(...) {}
+    }
+    db.finalizeStatement(stmt);
+    return std::nullopt;
 }
 
 } // namespace hero::dal

@@ -26,11 +26,13 @@ bool Server::initialize(crow::SimpleApp& app, int port) {
 
     // Instantiate Dependencies (Dependency Injection)
     dal_product_ = std::make_shared<dal::DalProduct>();
+    auto dal_transaction = std::make_shared<dal::DalTransaction>();
     product_service_ = std::make_unique<business_logic::ProductService>(dal_product_);
     inventory_service_ = std::make_unique<business_logic::InventoryService>(dal_product_);
-    checkout_service_ = std::make_unique<business_logic::CheckoutService>(dal_product_, 
+    checkout_service_ = std::make_unique<business_logic::CheckoutService>(dal_product_,
+        dal_transaction,
         std::shared_ptr<business_logic::ProductService>(product_service_.get(), [](auto*){}), // Non-owning shared_ptr
-        std::shared_ptr<business_logic::InventoryService>(inventory_service_.get(), [](auto*){})); 
+        std::shared_ptr<business_logic::InventoryService>(inventory_service_.get(), [](auto*){}));
 
     // Initialize async scheduler
     concurrency::AsyncTaskScheduler::getInstance().initialize(4);
@@ -227,7 +229,7 @@ void Server::setupCheckoutRoutes() {
 
     CROW_ROUTE(a, "/api/checkout")
     .methods(crow::HTTPMethod::POST)(
-        [](const crow::request& req) {
+        [this](const crow::request& req) {
             auto body = nlohmann::json::parse(req.body, nullptr, false);
             if (body.is_discarded() || !body.contains("items") || !body.contains("cashier")) {
                 return cors(crow::response(400, "Invalid JSON or missing fields"));
@@ -247,8 +249,7 @@ void Server::setupCheckoutRoutes() {
                     else if (m == "CHECK") method = models::Transaction::PaymentMethod::CHECK;
                 }
 
-                business_logic::CheckoutService checkout;
-                auto result = checkout.processCheckout(items, body["cashier"].get<std::string>(), method);
+                auto result = checkout_service_->processCheckout(items, body["cashier"].get<std::string>(), method);
 
                 nlohmann::json res_json;
                 res_json["success"] = result.success;
@@ -269,9 +270,8 @@ void Server::setupInventoryRoutes() {
 
     CROW_ROUTE(a, "/api/inventory/stats")
     .methods(crow::HTTPMethod::GET)(
-        []() {
-            business_logic::InventoryService inv;
-            auto stats = inv.getInventoryStats();
+        [this]() {
+            auto stats = inventory_service_->getInventoryStats();
             nlohmann::json out;
             out["total_products"] = stats.total_products;
             out["low_stock_items"] = stats.low_stock_items;
@@ -283,13 +283,12 @@ void Server::setupInventoryRoutes() {
 
     CROW_ROUTE(a, "/api/inventory/low-stock")
     .methods(crow::HTTPMethod::GET)(
-        [](const crow::request& req) {
+        [this](const crow::request& req) {
             int threshold = 10;
             if (req.url_params.get("threshold")) {
                 threshold = std::stoi(req.url_params.get("threshold"));
             }
-            business_logic::InventoryService inv;
-            auto products = inv.getLowStockProducts(threshold);
+            auto products = inventory_service_->getLowStockProducts(threshold);
             nlohmann::json arr = nlohmann::json::array();
             for (const auto& p : products) {
                 arr.push_back(p.toJson());
@@ -299,9 +298,8 @@ void Server::setupInventoryRoutes() {
 
     CROW_ROUTE(a, "/api/inventory/out-of-stock")
     .methods(crow::HTTPMethod::GET)(
-        []() {
-            business_logic::InventoryService inv;
-            auto products = inv.getOutOfStockProducts();
+        [this]() {
+            auto products = inventory_service_->getOutOfStockProducts();
             nlohmann::json arr = nlohmann::json::array();
             for (const auto& p : products) {
                 arr.push_back(p.toJson());

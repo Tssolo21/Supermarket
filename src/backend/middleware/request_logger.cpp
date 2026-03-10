@@ -75,14 +75,45 @@ void RequestLogger::enableConsoleOutput(bool enable) {
     console_output_ = enable;
 }
 
+#include <fstream>
+
 std::vector<RequestLogger::LogEntry> RequestLogger::getRecentLogs(int count) {
-    // TODO: Implement log retrieval from file
-    return {};
+    std::vector<LogEntry> logs;
+    std::ifstream file(log_file_);
+    if (!file.is_open()) return logs;
+
+    std::string line;
+    std::vector<std::string> lines;
+    while (std::getline(file, line)) {
+        lines.push_back(line);
+    }
+
+    int start = std::max(0, static_cast<int>(lines.size()) - count);
+    for (size_t i = start; i < lines.size(); ++i) {
+        LogEntry entry{};
+        entry.message = lines[i];
+        logs.push_back(entry);
+    }
+
+    return logs;
 }
 
 std::vector<RequestLogger::LogEntry> RequestLogger::getLogsByUser(const std::string& user_id) {
-    // TODO: Implement user-based log filtering
-    return {};
+    std::vector<LogEntry> logs;
+    std::ifstream file(log_file_);
+    if (!file.is_open()) return logs;
+
+    std::string line;
+    while (std::getline(file, line)) {
+        if (line.find("[User: " + user_id + "]") != std::string::npos) {
+            LogEntry entry{};
+            entry.message = line;
+            entry.user_id = user_id;
+            logs.push_back(entry);
+        }
+    }
+
+    return logs;
 }
 
 void RequestLogger::writeToFile(const LogEntry& entry) {

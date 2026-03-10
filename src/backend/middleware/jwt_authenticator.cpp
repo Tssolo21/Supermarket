@@ -56,6 +56,11 @@ std::optional<JwtAuthenticator::TokenPayload> JwtAuthenticator::validateToken(co
     std::string payload_b64 = token.substr(first_dot + 1, second_dot - first_dot - 1);
     std::string signature = token.substr(second_dot + 1);
 
+    // Check blacklist
+    if (blacklisted_tokens_.find(token) != blacklisted_tokens_.end()) {
+        return std::nullopt;
+    }
+
     // Verify signature
     if (signature != createSignature(header_b64, payload_b64)) {
         return std::nullopt;
@@ -94,7 +99,7 @@ bool JwtAuthenticator::isTokenExpired(const std::string& token) {
 }
 
 bool JwtAuthenticator::revokeToken(const std::string& token) {
-    // TODO: Implement token revocation list (blacklist)
+    blacklisted_tokens_.insert(token);
     return true;
 }
 

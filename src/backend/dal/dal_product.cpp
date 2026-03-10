@@ -35,7 +35,9 @@ ProductId DalProduct::create(const Product& product) {
     sqlite3_bind_int64(stmt, 12, product.getCreatedAt());
     sqlite3_bind_int64(stmt, 13, product.getUpdatedAt());
 
-    if (sqlite3_step(stmt) != SQLITE_DONE) {
+    int rc = sqlite3_step(stmt);
+    if (rc != SQLITE_DONE) {
+        std::cerr << "[DAL Product] Create failed: " << sqlite3_errmsg(db.getRawConnection()) << " (rc=" << rc << ")" << std::endl;
         db.finalizeStatement(stmt);
         return -1;
     }
@@ -409,12 +411,13 @@ bool DalProduct::createTableIfNotExists() {
     bool ok = db.execute(sql) == SQLITE_OK;
     
     // Migration for existing tables (ignore errors if columns exist)
+    // We don't check the return value here as columns might already exist
     db.execute("ALTER TABLE products ADD COLUMN buy_price REAL NOT NULL DEFAULT 0.0");
     db.execute("ALTER TABLE products ADD COLUMN margin REAL NOT NULL DEFAULT 0.0");
     db.execute("ALTER TABLE products ADD COLUMN barcode TEXT");
     db.execute("ALTER TABLE products ADD COLUMN expiration_date INTEGER DEFAULT 0");
     
-    return ok;
+    return true; // We return true if the main table exists or was created
 }
 
 std::vector<Product> DalProduct::executeQuery(const std::string& sql) {

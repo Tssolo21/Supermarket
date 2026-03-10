@@ -17,7 +17,7 @@ public:
     using Product = hero::models::Product;
     using ProductId = Product::ProductId;
 
-    explicit ProductService(std::unique_ptr<dal::IDalProduct> dal);
+    explicit ProductService(std::shared_ptr<dal::IDalProduct> dal);
 
     ProductService(const ProductService&) = delete;
     ProductService& operator=(const ProductService&) = delete;
@@ -47,7 +47,7 @@ public:
 
 private:
     void validateProduct(const Product& product);
-    std::unique_ptr<dal::IDalProduct> dal_;
+    std::shared_ptr<dal::IDalProduct> dal_;
 };
 
 } // namespace hero::business_logic

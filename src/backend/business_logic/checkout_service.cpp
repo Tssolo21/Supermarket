@@ -11,9 +11,11 @@ using Product = hero::models::Product;
 using ProductId = Product::ProductId;
 
 CheckoutService::CheckoutService(std::shared_ptr<dal::IDalProduct> dal,
+                                 std::shared_ptr<dal::DalTransaction> transaction_dal,
                                  std::shared_ptr<ProductService> product_service,
                                  std::shared_ptr<InventoryService> inventory_service)
     : dal_(std::move(dal)), 
+      transaction_dal_(std::move(transaction_dal)),
       product_service_(std::move(product_service)), 
       inventory_service_(std::move(inventory_service)) {}
 
@@ -43,9 +45,17 @@ CheckoutService::CheckoutResult CheckoutService::processCheckout(
         }
     }
     
-    // TODO: Persist transaction using dal_ once IDalTransaction is ready
+    // Persist transaction
+    if (transaction_dal_) {
+        auto id = transaction_dal_->create(transaction);
+        if (id != -1) {
+            return CheckoutResult{true, id, transaction.getTotalAmount(), "Checkout successful"};
+        } else {
+            return CheckoutResult{false, -1, 0.0, "Failed to persist transaction"};
+        }
+    }
     
-    return CheckoutResult{true, transaction.getId(), transaction.getTotalAmount(), "Checkout successful"};
+    return CheckoutResult{true, transaction.getId(), transaction.getTotalAmount(), "Checkout successful (not persisted)"};
 }
 
 std::future<CheckoutService::CheckoutResult> CheckoutService::processCheckoutAsync(
@@ -59,28 +69,57 @@ std::future<CheckoutService::CheckoutResult> CheckoutService::processCheckoutAsy
 }
 
 std::optional<Transaction> CheckoutService::getTransaction(TransactionId id) {
-    // TODO: Implement transaction retrieval from DAL
-    return std::nullopt;
+    if (!transaction_dal_) return std::nullopt;
+    return transaction_dal_->getById(id);
 }
 
 std::vector<Transaction> CheckoutService::getTransactionsByDateRange(time_t start, time_t end) {
-    // TODO: Implement date range query
-    return {};
+    if (!transaction_dal_) return {};
+    return transaction_dal_->getBetweenDates(static_cast<int64_t>(start), static_cast<int64_t>(end));
 }
 
 std::vector<Transaction> CheckoutService::getTransactionsByCashier(const std::string& cashier) {
-    // TODO: Implement cashier-based query
-    return {};
+    if (!transaction_dal_) return {};
+    // Filter transactions by cashier from a broad date range (or implement specific DAL method)
+    auto txs = transaction_dal_->getBetweenDates(0, 2147483647); // Far future
+    std::vector<Transaction> filtered;
+    for (const auto& tx : txs) {
+        if (tx.getCashier() == cashier) {
+            filtered.push_back(tx);
+        }
+    }
+    return filtered;
 }
 
 double CheckoutService::getDailySales(time_t date) {
-    // TODO: Implement daily sales calculation
-    return 0.0;
+    if (!transaction_dal_) return 0.0;
+
+    struct tm* timeinfo = std::localtime(&date);
+    timeinfo->tm_hour = 0;
+    timeinfo->tm_min = 0;
+    timeinfo->tm_sec = 0;
+    time_t start = std::mktime(timeinfo);
+    time_t end = start + 86400; // 24 hours
+
+    auto txs = transaction_dal_->getBetweenDates(start, end);
+    double total = 0.0;
+    for (const auto& tx : txs) {
+        total += tx.getTotalAmount();
+    }
+    return total;
 }
 
 int CheckoutService::getDailyTransactionCount(time_t date) {
-    // TODO: Implement transaction count
-    return 0;
+    if (!transaction_dal_) return 0;
+
+    struct tm* timeinfo = std::localtime(&date);
+    timeinfo->tm_hour = 0;
+    timeinfo->tm_min = 0;
+    timeinfo->tm_sec = 0;
+    time_t start = std::mktime(timeinfo);
+    time_t end = start + 86400;
+
+    return static_cast<int>(transaction_dal_->getBetweenDates(start, end).size());
 }
 
 void CheckoutService::validateCheckoutItems(const std::vector<std::pair<ProductId, int>>& items) {

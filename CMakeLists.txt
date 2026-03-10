@@ -199,9 +199,14 @@ set_target_properties(supermarket_tests PROPERTIES
 target_link_libraries(supermarket_tests PRIVATE
     nlohmann_json::nlohmann_json
     SQLite::SQLite3
-    Qt6::Core
-    Qt6::Gui
 )
+
+if(Qt6_FOUND)
+    target_link_libraries(supermarket_tests PRIVATE
+        Qt6::Core
+        Qt6::Gui
+    )
+endif()
 
 # No Qt for tests
 
