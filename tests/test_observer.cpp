@@ -58,7 +58,7 @@ void test_observer_integration() {
     hero::dal::DalProduct prodDal;
     
     // Clean up or ensure a product exists
-    auto existing = prodDal.getBySkU("TEST-OBS-1");
+    auto existing = prodDal.getBySku("TEST-OBS-1");
     if (existing) {
         prodDal.deleteById(existing->getId());
     }
@@ -71,7 +71,8 @@ void test_observer_integration() {
     auto productId = prodDal.create(p);
     assert(productId != -1);
     
-    auto& productService = ProductService::getInstance();
+    auto product_dal_ptr = std::make_shared<hero::dal::DalProduct>();
+    ProductService productService(product_dal_ptr);
     auto& notifier = InventoryNotifier::getInstance();
     auto mock = std::make_shared<MockObserver>();
     notifier.addObserver(mock);

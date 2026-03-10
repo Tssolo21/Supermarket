@@ -116,7 +116,10 @@ void Database::setError(int code, const std::string& message) {
     last_error_code_ = code;
     last_error_ = message;
     if (code != SQLITE_OK) {
-        std::cerr << "[DB ERROR] Code: " << code << " Message: " << message << std::endl;
+        // Suppress duplicate column error which happens during migrations
+        if (message.find("duplicate column name") == std::string::npos) {
+            std::cerr << "[DB ERROR] Code: " << code << " Message: " << message << std::endl;
+        }
     }
 }
 

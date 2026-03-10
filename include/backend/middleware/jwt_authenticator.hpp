@@ -3,6 +3,7 @@
 #include <string>
 #include <optional>
 #include <chrono>
+#include <unordered_set>
 #include <nlohmann/json.hpp>
 
 using json = nlohmann::json;
@@ -40,6 +41,7 @@ private:
     JwtAuthenticator() = default;
     
     static constexpr const char* SECRET_KEY = "hero_system_secret_key_2026";
+    std::unordered_set<std::string> blacklisted_tokens_;
     
     std::string encodeBase64(const std::string& input);
     std::string decodeBase64(const std::string& input);

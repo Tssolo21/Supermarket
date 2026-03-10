@@ -5,6 +5,7 @@
 #include <future>
 #include <optional>
 #include <backend/dal/idal_product.hpp>
+#include <backend/dal/dal_transaction.hpp>
 #include <backend/business_logic/product_service.hpp>
 #include <backend/business_logic/inventory_service.hpp>
 
@@ -22,6 +23,7 @@ public:
     using ProductId = Product::ProductId;
 
     CheckoutService(std::shared_ptr<dal::IDalProduct> dal,
+                    std::shared_ptr<dal::DalTransaction> transaction_dal,
                     std::shared_ptr<ProductService> product_service,
                     std::shared_ptr<InventoryService> inventory_service);
 
@@ -58,6 +60,7 @@ private:
                                   const std::string& cashier);
 
     std::shared_ptr<dal::IDalProduct> dal_;
+    std::shared_ptr<dal::DalTransaction> transaction_dal_;
     std::shared_ptr<ProductService> product_service_;
     std::shared_ptr<InventoryService> inventory_service_;
 };
