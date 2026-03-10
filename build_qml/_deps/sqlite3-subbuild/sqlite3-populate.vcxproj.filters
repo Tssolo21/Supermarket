@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\2004a61b1c93826dd0f27727dd488bd6\sqlite3-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\a8169dc0e3b4a1f552b3325ab46bb3ba\sqlite3-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\388c6edbfb6eb58deae38348643a6430\sqlite3-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-subbuild\CMakeFiles\sqlite3-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{ED497DB5-D00E-3CD0-B670-26EAED02279E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

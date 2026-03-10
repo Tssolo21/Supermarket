@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\36caa23a4650d5be3eb033cbb67c1a69\nlohmann_json_header-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\4eea4ba2e95e6e183de8e8f18ebfa12d\nlohmann_json_header-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\230eae6d4d7ca363497ce6ae7df69217\nlohmann_json_header-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-subbuild\CMakeFiles\nlohmann_json_header-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{F54C51D1-1376-3447-B6F4-27BA81927C7C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

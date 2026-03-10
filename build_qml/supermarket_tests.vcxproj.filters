@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_product.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_category.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_supplier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_expense.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\models\product.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\models\category.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\models\supplier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\models\transaction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\product_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\inventory_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\checkout_service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\tests\test_models.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\tests\test_dal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\tests\test_services.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-src\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{524E06D2-7358-3695-B13B-FD6F3ABF7D08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

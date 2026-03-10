@@ -1,0 +1,9 @@
+module Supermarket
+typeinfo supermarket_qt.qmltypes
+prefer :/Supermarket/
+Main 1.0 src/frontend/qml/Main.qml
+TransactionView 1.0 src/frontend/qml/components/TransactionView.qml
+InventoryView 1.0 src/frontend/qml/components/InventoryView.qml
+DashboardView 1.0 src/frontend/qml/components/DashboardView.qml
+depends QtQuick
+

@@ -1,0 +1,13 @@
+# ninja log v7
+55	17330	7947638711174753	CMakeFiles/supermarket_backend.dir/src/backend/dal/database.cpp.obj	1ad5d9f289a25b6d
+105	40251	7947638711707386	CMakeFiles/supermarket_backend.dir/src/backend/dal/dal_category.cpp.obj	f990817853e10c6
+127	41695	7947638711980103	CMakeFiles/supermarket_backend.dir/src/backend/dal/dal_supplier.cpp.obj	987fb15acd0a05fe
+330	46692	7947638715383913	CMakeFiles/supermarket_backend.dir/src/backend/models/category.cpp.obj	e152ce93bdc1ddf4
+554	46720	7947638717865523	CMakeFiles/supermarket_backend.dir/src/backend/models/supplier.cpp.obj	b92087a97955bd95
+194	46986	7947638712805821	CMakeFiles/supermarket_backend.dir/src/backend/dal/dal_expense.cpp.obj	7d67994284b16a88
+280	48407	7947638713710169	CMakeFiles/supermarket_backend.dir/src/backend/models/product.cpp.obj	cc794c50fedba50e
+74	48612	7947638711434812	CMakeFiles/supermarket_backend.dir/src/backend/dal/dal_product.cpp.obj	213635467b1ada0f
+754	51507	7947638720751896	CMakeFiles/supermarket_backend.dir/src/backend/models/transaction.cpp.obj	46619cd97245e4c6
+175	56683	7947638712388835	CMakeFiles/supermarket_backend.dir/src/backend/dal/dal_transaction.cpp.obj	5e70b303978d8e1f
+38	128787	7947638711002648	CMakeFiles/SQLite3.dir/third_party/sqlite3/sqlite3.c.obj	9b78e68721d43801
+152	642	7947647280614400	lib/libSQLite3.a	e83a15b3e440c511

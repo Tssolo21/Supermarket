@@ -1,0 +1,8 @@
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc
+/Supermarket/src/frontend/qml/Main.qml
+/Supermarket/src/frontend/qml/components/TransactionView.qml
+/Supermarket/src/frontend/qml/components/InventoryView.qml
+/Supermarket/src/frontend/qml/components/DashboardView.qml

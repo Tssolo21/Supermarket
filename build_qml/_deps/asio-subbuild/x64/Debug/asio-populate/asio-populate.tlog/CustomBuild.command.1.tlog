@@ -1,0 +1,152 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/tmp/asio-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/download-asio-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/verify-asio-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/extract-asio-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\1F5F75B712D9A6E6F1D4DB699D800D4B\ASIO-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\A5B0056DEA2A1B450E610AFB6614408C\ASIO-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/CMakeFiles/Debug/asio-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/Debug/asio-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\3E87A9F16DCB904F45C8605B6073929F\ASIO-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

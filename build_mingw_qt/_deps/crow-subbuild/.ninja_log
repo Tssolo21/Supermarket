@@ -1,0 +1,21 @@
+# ninja log v6
+6	355	7947245863521923	crow-populate-prefix/src/crow-populate-stamp/crow-populate-mkdir	b519467cbe678f07
+6	355	7947245863521923	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-mkdir	b519467cbe678f07
+356	5111	7947245911098074	crow-populate-prefix/src/crow-populate-stamp/crow-populate-download	2c5301cec3063a8a
+356	5111	7947245911098074	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-download	2c5301cec3063a8a
+5111	5271	7947245912692614	crow-populate-prefix/src/crow-populate-stamp/crow-populate-update	d9912952363316dc
+5111	5271	7947245912692614	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-update	d9912952363316dc
+5272	5435	7947245914326116	crow-populate-prefix/src/crow-populate-stamp/crow-populate-patch	fc49f75a0c516ea6
+5272	5435	7947245914326116	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-patch	fc49f75a0c516ea6
+5435	5717	7947245917173466	crow-populate-prefix/src/crow-populate-stamp/crow-populate-configure	4aecce92f57d4166
+5435	5717	7947245917173466	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-configure	4aecce92f57d4166
+5717	5925	7947245918965729	crow-populate-prefix/src/crow-populate-stamp/crow-populate-build	5cb9ed1a73112f62
+5717	5925	7947245918965729	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-build	5cb9ed1a73112f62
+5926	6107	7947245921071338	crow-populate-prefix/src/crow-populate-stamp/crow-populate-install	68af853d57d123d8
+5926	6107	7947245921071338	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-install	68af853d57d123d8
+6108	6271	7947245922690965	crow-populate-prefix/src/crow-populate-stamp/crow-populate-test	47ea32b87395700a
+6108	6271	7947245922690965	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-test	47ea32b87395700a
+6272	6463	7947245924668674	CMakeFiles/crow-populate-complete	bf93bf8411732822
+6272	6463	7947245924668674	crow-populate-prefix/src/crow-populate-stamp/crow-populate-done	bf93bf8411732822
+6272	6463	7947245924668674	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/CMakeFiles/crow-populate-complete	bf93bf8411732822
+6272	6463	7947245924668674	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/crow-populate-done	bf93bf8411732822

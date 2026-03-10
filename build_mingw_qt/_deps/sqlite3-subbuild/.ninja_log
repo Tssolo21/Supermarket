@@ -1,0 +1,21 @@
+# ninja log v6
+4	151	7947245621055025	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-mkdir	6613134b96e7d5d3
+4	151	7947245621055025	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-mkdir	6613134b96e7d5d3
+153	6707	7947245686618858	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-download	6a3a6dcb4eddbeb4
+153	6707	7947245686618858	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-download	6a3a6dcb4eddbeb4
+6709	6837	7947245687921006	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-update	61123137b2c56fee
+6709	6837	7947245687921006	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-update	61123137b2c56fee
+6837	8699	7947245706557387	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-patch	7dd8f69c37fb5f42
+6837	8699	7947245706557387	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-patch	7dd8f69c37fb5f42
+8699	8833	7947245707901350	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-configure	6bbcd43bcd82d138
+8699	8833	7947245707901350	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-configure	6bbcd43bcd82d138
+8833	8976	7947245709290796	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-build	e7187cb28b8b6f7b
+8833	8976	7947245709290796	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-build	e7187cb28b8b6f7b
+8977	9116	7947245710735126	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-install	f8e1c8b5bf6d0c4f
+8977	9116	7947245710735126	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-install	f8e1c8b5bf6d0c4f
+9117	9247	7947245712052660	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-test	ef28b750b3f51003
+9117	9247	7947245712052660	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-test	ef28b750b3f51003
+9248	9445	7947245714018765	CMakeFiles/sqlite3-populate-complete	fe39acd249ed4360
+9248	9445	7947245714018765	sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-done	fe39acd249ed4360
+9248	9445	7947245714018765	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/CMakeFiles/sqlite3-populate-complete	fe39acd249ed4360
+9248	9445	7947245714018765	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/sqlite3-populate-done	fe39acd249ed4360

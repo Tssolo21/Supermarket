@@ -1,0 +1,16 @@
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_ninja
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_ninja/Supermarket
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_ninja
+-I
+D:/Qt/6.10.2/mingw_64/qml
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_ninja/.qt/rcc/qmake_Supermarket.qrc
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_ninja/.qt/rcc/supermarket_qt_raw_qml_0.qrc
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_ninja/.qt/rcc/supermarket_qt_raw_qml_0_extra_qmldirs.qrc
+--module
+Supermarket

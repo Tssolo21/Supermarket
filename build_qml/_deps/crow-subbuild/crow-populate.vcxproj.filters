@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\d347bec382a2584c7f6e807cb2131dd8\crow-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\f5403f6e8cf874cb5e36abaf4fbb7aa7\crow-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\feb782281e9840e0407b7d2193d728bc\crow-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-subbuild\CMakeFiles\crow-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{46F374D0-22E3-3E5D-806E-1AF9B7BE9A20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

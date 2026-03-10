@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\230EAE6D4D7CA363497CE6AE7DF69217\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

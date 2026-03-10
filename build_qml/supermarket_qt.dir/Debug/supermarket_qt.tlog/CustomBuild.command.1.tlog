@@ -1,0 +1,114 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\A3895C0EF0857117DC69ACA71D8B19CE\QT6SUPERMARKET_QT_METATYPES.JSON.GEN.RULE
+setlocal
+D:\Qt\6.10.2\mingw_64\bin\moc.exe -o C:/Users/lenovo/Desktop/Supermarket/build_qml/meta_types/qt6supermarket_qt_metatypes.json.gen --collect-json @C:/Users/lenovo/Desktop/Supermarket/build_qml/meta_types/supermarket_qt_json_file_list.txt
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/lenovo/Desktop/Supermarket/build_qml/meta_types/qt6supermarket_qt_metatypes.json.gen C:/Users/lenovo/Desktop/Supermarket/build_qml/meta_types/qt6supermarket_qt_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\6C287F287D037869A7B45210F216AF73\SUPERMARKET_QT_QMLTYPEREGISTRATIONS.CPP.RULE
+setlocal
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmltyperegistrar.exe --generate-qmltypes=C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket/supermarket_qt.qmltypes --import-name=Supermarket --major-version=1 --minor-version=0 @C:/Users/lenovo/Desktop/Supermarket/build_qml/qmltypes/supermarket_qt_foreign_types.txt -o C:/Users/lenovo/Desktop/Supermarket/build_qml/supermarket_qt_qmltyperegistrations.cpp C:/Users/lenovo/Desktop/Supermarket/build_qml/meta_types/qt6supermarket_qt_metatypes.json
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/qmltypes
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/qmltypes/supermarket_qt.qmltypes
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\A342932027C3874F5D5DBC04A67D4175\QRC_QMAKE_SUPERMARKET.CPP.RULE
+setlocal
+D:\Qt\6.10.2\mingw_64\bin\rcc.exe --output C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qrc_qmake_Supermarket.cpp --name qmake_Supermarket C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\1F9D27DECBADC91EAB7C1E02F0089775\SUPERMARKET_QT_QMLCACHE_LOADER.CPP.RULE
+setlocal
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmlcachegen.exe --resource-name qmlcache_supermarket_qt -o C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_qmlcache_loader.cpp @C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_qml_loader_file_list.rsp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\F6E32A300A74A08A91C4E64997983311\MAIN_QML.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml
+if %errorlevel% neq 0 goto :cmEnd
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmlcachegen.exe --bare --resource-path /Supermarket/src/frontend/qml/Main.qml -I C:/Users/lenovo/Desktop/Supermarket/build_qml -I D:/Qt/6.10.2/mingw_64/qml -i C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket/qmldir --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc --dump-aot-stats --module-id=Supermarket(supermarket_qt) -o C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/Main_qml.cpp C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/Main.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\BDC08D0062C15ABED7AD8583820C8127\TRANSACTIONVIEW_QML.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components
+if %errorlevel% neq 0 goto :cmEnd
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmlcachegen.exe --bare --resource-path /Supermarket/src/frontend/qml/components/TransactionView.qml -I C:/Users/lenovo/Desktop/Supermarket/build_qml -I D:/Qt/6.10.2/mingw_64/qml -i C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket/qmldir --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc --dump-aot-stats --module-id=Supermarket(supermarket_qt) -o C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components/TransactionView_qml.cpp C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/TransactionView.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\BDC08D0062C15ABED7AD8583820C8127\INVENTORYVIEW_QML.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components
+if %errorlevel% neq 0 goto :cmEnd
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmlcachegen.exe --bare --resource-path /Supermarket/src/frontend/qml/components/InventoryView.qml -I C:/Users/lenovo/Desktop/Supermarket/build_qml -I D:/Qt/6.10.2/mingw_64/qml -i C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket/qmldir --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc --dump-aot-stats --module-id=Supermarket(supermarket_qt) -o C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components/InventoryView_qml.cpp C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/InventoryView.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\BDC08D0062C15ABED7AD8583820C8127\DASHBOARDVIEW_QML.CPP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components
+if %errorlevel% neq 0 goto :cmEnd
+call .qt\bin\qt_setup_tool_path.bat D:/Qt/6.10.2/mingw_64/bin/qmlcachegen.exe --bare --resource-path /Supermarket/src/frontend/qml/components/DashboardView.qml -I C:/Users/lenovo/Desktop/Supermarket/build_qml -I D:/Qt/6.10.2/mingw_64/qml -i C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket/qmldir --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qmake_Supermarket.qrc --resource C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc --dump-aot-stats --module-id=Supermarket(supermarket_qt) -o C:/Users/lenovo/Desktop/Supermarket/build_qml/.rcc/qmlcache/supermarket_qt_src/frontend/qml/components/DashboardView_qml.cpp C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/DashboardView.qml
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\A342932027C3874F5D5DBC04A67D4175\QRC_SUPERMARKET_QT_RAW_QML_0.CPP.RULE
+setlocal
+D:\Qt\6.10.2\mingw_64\bin\rcc.exe --output C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/qrc_supermarket_qt_raw_qml_0.cpp --name supermarket_qt_raw_qml_0 C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/rcc/supermarket_qt_raw_qml_0.qrc --no-zstd
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket -BC:/Users/lenovo/Desktop/Supermarket/build_qml --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

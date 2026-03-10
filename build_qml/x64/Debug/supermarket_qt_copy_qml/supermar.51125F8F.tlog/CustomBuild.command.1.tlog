@@ -1,0 +1,28 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\E0F4DFAF322ACF2E1575436036FF2D65\SUPERMARKET_QT_QML.TXT.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DFILES_INFO_PATH=C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/supermarket_qt_qml.cmake -P D:/Qt/6.10.2/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\571749ADD79450A9C971A7E6270CDF72\SUPERMARKET_QT_COPY_QML.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket -BC:/Users/lenovo/Desktop/Supermarket/build_qml --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

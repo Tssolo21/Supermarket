@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\1f5f75b712d9a6e6f1d4db699d800d4b\asio-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\a5b0056dea2a1b450e610afb6614408c\asio-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\3e87a9f16dcb904f45c8605b6073929f\asio-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\asio-subbuild\CMakeFiles\asio-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{DBB84803-3DFF-34A9-A441-02F3B7E3D2D8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

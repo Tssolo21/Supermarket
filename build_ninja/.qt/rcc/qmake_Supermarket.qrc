@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Supermarket">
+    <file alias="qmldir">C:/Users/lenovo/Desktop/Supermarket/build_ninja/Supermarket/qmldir</file>
+  </qresource>
+</RCC>
+

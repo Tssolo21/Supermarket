@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\571749add79450a9c971a7e6270cdf72\all_qmllint.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\all_qmllint" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6A8D04BE-B40B-36DC-BA8A-AE235AB679F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

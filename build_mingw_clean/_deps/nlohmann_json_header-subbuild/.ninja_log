@@ -1,0 +1,21 @@
+# ninja log v6
+6	195	7947246162739780	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-mkdir	e1bdf070c8dd23d6
+6	195	7947246162739780	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-mkdir	e1bdf070c8dd23d6
+197	2110	7947246181915912	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-download	cafcfc34c1ab164c
+197	2110	7947246181915912	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-download	cafcfc34c1ab164c
+2111	2246	7947246183226173	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-update	697af7d3e2c03aa6
+2111	2246	7947246183226173	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-update	697af7d3e2c03aa6
+2246	2367	7947246184467243	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-patch	d5c24ffd32986d84
+2246	2367	7947246184467243	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-patch	d5c24ffd32986d84
+2367	2491	7947246185709800	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-configure	48013453601a7fd3
+2367	2491	7947246185709800	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-configure	48013453601a7fd3
+2492	2608	7947246186882147	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-build	13591c8dfa34e81c
+2492	2608	7947246186882147	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-build	13591c8dfa34e81c
+2608	2723	7947246188048166	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-install	4acd02730200686e
+2608	2723	7947246188048166	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-install	4acd02730200686e
+2724	2840	7947246189221622	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-test	70e963e8271c433e
+2724	2840	7947246189221622	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-test	70e963e8271c433e
+2841	3010	7947246190863244	CMakeFiles/nlohmann_json_header-populate-complete	c55f3a64ad78933c
+2841	3010	7947246190863244	nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-done	c55f3a64ad78933c
+2841	3010	7947246190863244	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/CMakeFiles/nlohmann_json_header-populate-complete	c55f3a64ad78933c
+2841	3010	7947246190863244	C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/nlohmann_json_header-populate-done	c55f3a64ad78933c

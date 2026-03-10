@@ -1,0 +1,14 @@
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/Supermarket
+-I
+C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt
+-I
+D:/Qt/6.10.2/mingw_64/qml
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/.qt/rcc/qmake_Supermarket.qrc
+--resource
+C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/.qt/rcc/supermarket_qt_raw_qml_0.qrc
+--module
+Supermarket

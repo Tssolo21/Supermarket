@@ -1,0 +1,152 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/tmp/nlohmann_json_header-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/download-nlohmann_json_header-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/verify-nlohmann_json_header-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/extract-nlohmann_json_header-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\36CAA23A4650D5BE3EB033CBB67C1A69\NLOHMANN_JSON_HEADER-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\nlohmann_json_header-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\4EEA4BA2E95E6E183DE8E8F18EBFA12D\NLOHMANN_JSON_HEADER-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/CMakeFiles/Debug/nlohmann_json_header-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/nlohmann_json_header-populate-prefix/src/nlohmann_json_header-populate-stamp/Debug/nlohmann_json_header-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKEFILES\230EAE6D4D7CA363497CE6AE7DF69217\NLOHMANN_JSON_HEADER-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\NLOHMANN_JSON_HEADER-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/nlohmann_json_header-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

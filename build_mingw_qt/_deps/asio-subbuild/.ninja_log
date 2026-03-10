@@ -1,0 +1,21 @@
+# ninja log v6
+4	185	7947245747943684	asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	8a9d0ccafecea19c
+4	185	7947245747943684	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-mkdir	8a9d0ccafecea19c
+187	8927	7947245834982998	asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	d28fd2996e46f036
+187	8927	7947245834982998	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-download	d28fd2996e46f036
+8928	9212	7947245837972125	asio-populate-prefix/src/asio-populate-stamp/asio-populate-update	7f8385fab8219ca3
+8928	9212	7947245837972125	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-update	7f8385fab8219ca3
+9213	9372	7947245839842165	asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	3000fa5ac4d55eb5
+9213	9372	7947245839842165	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-patch	3000fa5ac4d55eb5
+9372	9537	7947245841500926	asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	55256184d087fe12
+9372	9537	7947245841500926	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-configure	55256184d087fe12
+9537	9704	7947245843195967	asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	6632a3b3369bcd8a
+9537	9704	7947245843195967	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-build	6632a3b3369bcd8a
+9704	9867	7947245844815751	asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	54b7185c54ed5c27
+9704	9867	7947245844815751	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-install	54b7185c54ed5c27
+9867	10012	7947245846250982	asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	a318d37f5f8d4a71
+9867	10012	7947245846250982	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-test	a318d37f5f8d4a71
+10012	10197	7947245848118453	CMakeFiles/asio-populate-complete	d309124dffa86fbe
+10012	10197	7947245848118453	asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	d309124dffa86fbe
+10012	10197	7947245848118453	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/CMakeFiles/asio-populate-complete	d309124dffa86fbe
+10012	10197	7947245848118453	C:/Users/lenovo/Desktop/Supermarket/build_mingw_qt/_deps/asio-subbuild/asio-populate-prefix/src/asio-populate-stamp/asio-populate-done	d309124dffa86fbe

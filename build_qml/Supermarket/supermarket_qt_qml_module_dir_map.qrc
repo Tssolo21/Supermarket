@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/Supermarket">C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket</file>
+
+  </qresource>
+</RCC>

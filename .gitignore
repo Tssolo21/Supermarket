@@ -1,0 +1,77 @@
+# Build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+out/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiled output
+*.obj
+*.exe
+*.dll
+*.dylib
+*.so
+*.a
+*.lib
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Database
+supermarket.db
+supermarket.db-wal
+supermarket.db-shm
+
+# Logs
+*.log
+requests.log
+*.log.*
+
+# Dependencies
+vcpkg_installed/
+conan/
+
+# OS
+Thumbs.db
+.directory
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node modules (if using npm)
+node_modules/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# User-specific files
+.vscode/settings.json
+.vscode/launch.json
+
+# Qt specific
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+*.moc
+
+# Doxyfile generated docs
+docs/generated/
+docs/html/
+docs/latex/

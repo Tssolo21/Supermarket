@@ -1,0 +1,12 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=url
+command=C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/download-crow-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/verify-crow-populate.cmake;COMMAND;C:/Program Files/CMake/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/extract-crow-populate.cmake
+source_dir=C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-src
+work_dir=C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps
+url(s)=https://github.com/CrowCpp/Crow/archive/refs/tags/v1.2.0.zip
+hash=
+      no_extract=
+

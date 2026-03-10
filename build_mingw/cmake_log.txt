@@ -1,0 +1,22 @@
+-- 
+-- ====== Supermarket Hero System Build Configuration ======
+-- C++ Standard: C++20
+-- Build Type: Release
+-- 
+-- Targets:
+--   - supermarket_backend (RESTful API Server)
+--   - supermarket_qt (Desktop Frontend)
+--   - supermarket_tests (Unit Tests)
+-- 
+-- Output Directory: C:/Users/lenovo/Desktop/Supermarket/build_mingw/bin
+-- =========================================================
+-- 
+-- Configuring done (1.9s)
+CMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_C_ARCHIVE_CREATE
+CMake Error: Error required internal CMake variable not set, cmake may not be built correctly.
+Missing variable is:
+CMAKE_C_ARCHIVE_FINISH
+-- Generating done (0.4s)
+CMake Generate step failed.  Build files cannot be regenerated correctly.

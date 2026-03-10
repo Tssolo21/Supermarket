@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\lenovo\Desktop\Supermarket\build_qml\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\lenovo\Desktop\Supermarket\build_qml\x64\Debug\generate_qmlls_build_ini_file</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\lenovo\Desktop\Supermarket\build_qml\x64\Debug\supermarket_qt_copy_qml</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\lenovo\Desktop\Supermarket\build_qml\x64\Debug\supermarket_qt_copy_res</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\lenovo\Desktop\Supermarket\build_qml\x64\Debug\supermarket_qt_autogen</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

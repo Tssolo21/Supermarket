@@ -1,0 +1,152 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/tmp/crow-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/download-crow-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/verify-crow-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/extract-crow-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\D347BEC382A2584C7F6E807CB2131DD8\CROW-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\crow-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\F5403F6E8CF874CB5E36ABAF4FBB7AA7\CROW-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/CMakeFiles/Debug/crow-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/crow-populate-prefix/src/crow-populate-stamp/Debug/crow-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKEFILES\FEB782281E9840E0407B7D2193D728BC\CROW-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\CROW-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/crow-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\ASIO-SUBBUILD\CMAKEFILES\3E87A9F16DCB904F45C8605B6073929F\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/asio-subbuild/asio-populate.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

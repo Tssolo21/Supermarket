@@ -1,0 +1,17 @@
+C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests_autogen\mocs_compilation_Debug.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\mocs_compilation_Debug.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\database.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\database.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_product.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\dal_product.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_category.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\dal_category.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_supplier.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\dal_supplier.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_transaction.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\dal_transaction.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\dal\dal_expense.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\dal_expense.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\models\product.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\product.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\models\category.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\category.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\models\supplier.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\supplier.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\models\transaction.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\transaction.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\product_service.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\product_service.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\inventory_service.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\inventory_service.obj
+C:\Users\lenovo\Desktop\Supermarket\src\backend\business_logic\checkout_service.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\checkout_service.obj
+C:\Users\lenovo\Desktop\Supermarket\tests\test_models.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\test_models.obj
+C:\Users\lenovo\Desktop\Supermarket\tests\test_dal.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\test_dal.obj
+C:\Users\lenovo\Desktop\Supermarket\tests\test_services.cpp;C:\Users\lenovo\Desktop\Supermarket\build_qml\supermarket_tests.dir\Debug\test_services.obj

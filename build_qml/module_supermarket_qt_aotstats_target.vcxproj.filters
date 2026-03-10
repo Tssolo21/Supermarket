@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\f6e32a300a74a08a91c4e64997983311\Main_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\bdc08d0062c15abed7ad8583820c8127\DashboardView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\bdc08d0062c15abed7ad8583820c8127\InventoryView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\bdc08d0062c15abed7ad8583820c8127\TransactionView_qml.cpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\1f9d27decbadc91eab7c1e02f0089775\module_supermarket_qt.aotstats.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\571749add79450a9c971a7e6270cdf72\module_supermarket_qt_aotstats_target.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\lenovo\Desktop\Supermarket\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\lenovo\Desktop\Supermarket\build_qml\CMakeFiles\module_supermarket_qt_aotstats_target" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6A8D04BE-B40B-36DC-BA8A-AE235AB679F3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

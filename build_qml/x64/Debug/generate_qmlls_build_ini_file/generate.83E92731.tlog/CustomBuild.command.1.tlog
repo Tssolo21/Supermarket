@@ -1,0 +1,36 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\E0F4DFAF322ACF2E1575436036FF2D65\.QMLLS.BUILD.INI.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo [General] > C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/.qmlls.build.ini
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append docDir= >> C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/.qmlls.build.ini
+if %errorlevel% neq 0 goto :cmEnd
+D:\Qt\6.10.2\mingw_64\bin\qtpaths.exe --query QT_INSTALL_DOCS >> C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/.qmlls.build.ini
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "[C:<SLASH>Users<SLASH>lenovo<SLASH>Desktop<SLASH>Supermarket]" >> C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/.qmlls.build.ini
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "importPaths=\"C:/Users/lenovo/Desktop/Supermarket/build_qml";"C:/Users/lenovo/Desktop/Supermarket/build_qml/Supermarket";"D:/Qt/6.10.2/mingw_64/qml\"" >> C:/Users/lenovo/Desktop/Supermarket/build_qml/.qt/.qmlls.build.ini
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\571749ADD79450A9C971A7E6270CDF72\GENERATE_QMLLS_BUILD_INI_FILE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket -BC:/Users/lenovo/Desktop/Supermarket/build_qml --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

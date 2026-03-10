@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/Supermarket">
+    <file alias="qmldir">C:/Users/lenovo/Desktop/Supermarket/build_mingw_clean/Supermarket/qmldir</file>
+  </qresource>
+</RCC>
+

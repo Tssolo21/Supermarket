@@ -1,0 +1,156 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -Dcfgdir=/Debug -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/tmp/sqlite3-populate-mkdirs.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/download-sqlite3-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/verify-sqlite3-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE -P C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/extract-sqlite3-populate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-PATCH.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+powershell -Command "((Get-Content CMakeLists.txt) -replace 'VERSION [0-9.]+', 'VERSION 3.10') | Set-Content CMakeLists.txt"
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\2004A61B1C93826DD0F27727DD488BD6\SQLITE3-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\lenovo\Desktop\Supermarket\build_qml\_deps\sqlite3-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\A8169DC0E3B4A1F552B3325AB46BB3BA\SQLITE3-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/CMakeFiles/Debug/sqlite3-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/sqlite3-populate-prefix/src/sqlite3-populate-stamp/Debug/sqlite3-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKEFILES\388C6EDBFB6EB58DEAE38348643A6430\SQLITE3-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\_DEPS\SQLITE3-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild -BC:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild --check-stamp-file C:/Users/lenovo/Desktop/Supermarket/build_qml/_deps/sqlite3-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

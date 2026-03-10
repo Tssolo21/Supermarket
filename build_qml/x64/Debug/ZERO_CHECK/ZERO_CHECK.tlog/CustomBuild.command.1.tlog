@@ -1,0 +1,10 @@
+^C:\USERS\LENOVO\DESKTOP\SUPERMARKET\BUILD_QML\CMAKEFILES\571749ADD79450A9C971A7E6270CDF72\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/lenovo/Desktop/Supermarket -BC:/Users/lenovo/Desktop/Supermarket/build_qml --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lenovo/Desktop/Supermarket/build_qml/SupermarketHeroSystem.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

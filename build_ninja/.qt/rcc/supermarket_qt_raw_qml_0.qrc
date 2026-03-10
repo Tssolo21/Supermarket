@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/Supermarket/">
+    <file alias="src/frontend/qml/Main.qml">C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/Main.qml</file>
+    <file alias="src/frontend/qml/components/TransactionView.qml">C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/TransactionView.qml</file>
+    <file alias="src/frontend/qml/components/InventoryView.qml">C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/InventoryView.qml</file>
+    <file alias="src/frontend/qml/components/DashboardView.qml">C:/Users/lenovo/Desktop/Supermarket/src/frontend/qml/components/DashboardView.qml</file>
+  </qresource>
+</RCC>
+
