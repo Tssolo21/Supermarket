@@ -3,11 +3,14 @@
 #include "backend/dal/dal_product.hpp"
 #include "backend/dal/dal_transaction.hpp"
 #include "backend/dal/dal_expense.hpp"
+#ifdef QT_CORE_LIB
 #include <QDateTime>
+#endif
 #include <ctime>
 
 namespace hero::business_logic {
 
+#ifdef QT_CORE_LIB
 QVariantMap FinancialService::calculateMetrics(int64_t startTime, int64_t endTime) {
     auto txs = getTransactionsBetween(startTime, endTime);
     auto exps = getExpensesBetween(startTime, endTime);
@@ -63,6 +66,10 @@ bool FinancialService::addExpense(const QString& category, const QString& descri
     }
     return false;
 }
+#else
+void FinancialService::calculateMetrics(int64_t startTime, int64_t endTime) {
+}
+#endif
 
 std::vector<models::Transaction> FinancialService::getTransactionsBetween(int64_t start, int64_t end) {
     dal::DalTransaction dal;

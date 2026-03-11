@@ -1,6 +1,7 @@
 #include "backend/business_logic/alert_system.hpp"
 #include "backend/dal/dal_product.hpp"
 #include <ctime>
+#include <iostream>
 
 namespace hero::business_logic {
 
