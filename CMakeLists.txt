@@ -26,6 +26,9 @@ if(POLICY CMP0135)
 endif()
 
 include(FetchContent)
+if(POLICY CMP0169)
+    cmake_policy(SET CMP0169 OLD)
+endif()
 
 # nlohmann_json - provided in the include/ directory
 add_library(nlohmann_json INTERFACE)
@@ -41,36 +44,35 @@ if(NOT MSVC)
 endif()
 add_library(SQLite::SQLite3 ALIAS SQLite3)
 
-# ASIO (required by Crow)
+# ASIO (required by Crow) - header-only
 FetchContent_Declare(
     asio
     URL https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-1-30-2.tar.gz
 )
-FetchContent_MakeAvailable(asio)
+FetchContent_GetProperties(asio)
+if(NOT asio_POPULATED)
+    FetchContent_Populate(asio)
+endif()
+add_library(asio_lib INTERFACE)
+target_include_directories(asio_lib INTERFACE ${asio_SOURCE_DIR}/include)
+target_compile_definitions(asio_lib INTERFACE ASIO_STANDALONE)
 
-# Set variable for Crow's Findasio.cmake
-set(ASIO_INCLUDE_DIR "${asio_SOURCE_DIR}/include" CACHE PATH "ASIO include directory")
-include_directories(${asio_SOURCE_DIR}/include)
-
-# Crow
+# Crow - header-only
 FetchContent_Declare(
     crow
     URL https://github.com/CrowCpp/Crow/archive/refs/tags/v1.2.0.tar.gz
 )
-FetchContent_MakeAvailable(crow)
-# Ensure Crow::Crow and crow targets are available
-if(NOT TARGET Crow::Crow)
-    if(TARGET crow)
-        add_library(Crow::Crow ALIAS crow)
-    else()
-        add_library(crow_interface INTERFACE)
-        target_include_directories(crow_interface INTERFACE ${crow_SOURCE_DIR}/include)
-        target_link_libraries(crow_interface INTERFACE asio)
-        add_library(Crow::Crow ALIAS crow_interface)
-        add_library(crow ALIAS crow_interface)
-    endif()
+FetchContent_GetProperties(crow)
+if(NOT crow_POPULATED)
+    FetchContent_Populate(crow)
 endif()
+add_library(crow_lib INTERFACE)
+target_include_directories(crow_lib INTERFACE ${crow_SOURCE_DIR}/include)
+target_link_libraries(crow_lib INTERFACE asio_lib)
+add_library(Crow::Crow ALIAS crow_lib)
+add_library(crow ALIAS crow_lib)
 include_directories(${crow_SOURCE_DIR}/include)
+include_directories(${asio_SOURCE_DIR}/include)
 
 
 # Optional Qt6 for frontend

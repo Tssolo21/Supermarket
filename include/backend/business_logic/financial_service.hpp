@@ -35,7 +35,7 @@ signals:
 
 private:
     FinancialService() = default;
-    ~FinancialService() override = default;
+    ~FinancialService() = default;
     
     // Disable copy
     FinancialService(const FinancialService&) = delete;
