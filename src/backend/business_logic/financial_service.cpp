@@ -68,6 +68,7 @@ bool FinancialService::addExpense(const QString& category, const QString& descri
 }
 #else
 void FinancialService::calculateMetrics(int64_t startTime, int64_t endTime) {
+    // Basic calculation logic for non-Qt backend (can be expanded if needed)
 }
 #endif
 
