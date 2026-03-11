@@ -35,7 +35,15 @@ signals:
 
 private:
     FinancialService() = default;
+<<<<<<< fix-issues-and-complete-implementation-17644940602424617538
+#ifdef QT_CORE_LIB
+    ~FinancialService() override = default;
+#else
     ~FinancialService() = default;
+#endif
+=======
+    ~FinancialService() = default;
+>>>>>>> master
     
     // Disable copy
     FinancialService(const FinancialService&) = delete;

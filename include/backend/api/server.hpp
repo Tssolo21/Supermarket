@@ -2,6 +2,10 @@
 
 #include <string>
 #include <memory>
+#include <backend/dal/idal_product.hpp>
+#include <backend/business_logic/product_service.hpp>
+#include <backend/business_logic/inventory_service.hpp>
+#include <backend/business_logic/checkout_service.hpp>
 // Forward declarations or include crow?
 // Usually, we can just forward-declare but Crow uses heavy templates.
 // It is better to include crow minimal or just include it.

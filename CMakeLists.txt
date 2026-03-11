@@ -49,6 +49,13 @@ FetchContent_Declare(
     asio
     URL https://github.com/chriskohlhoff/asio/archive/refs/tags/asio-1-30-2.tar.gz
 )
+<<<<<<< fix-issues-and-complete-implementation-17644940602424617538
+FetchContent_MakeAvailable(asio)
+
+# Set variable for Crow's Findasio.cmake
+set(ASIO_INCLUDE_DIR "${asio_SOURCE_DIR}/asio/include" CACHE PATH "ASIO include directory")
+include_directories(${asio_SOURCE_DIR}/asio/include)
+=======
 FetchContent_GetProperties(asio)
 if(NOT asio_POPULATED)
     FetchContent_Populate(asio)
@@ -56,15 +63,32 @@ endif()
 add_library(asio_lib INTERFACE)
 target_include_directories(asio_lib INTERFACE ${asio_SOURCE_DIR}/include)
 target_compile_definitions(asio_lib INTERFACE ASIO_STANDALONE)
+>>>>>>> master
 
 # Crow - header-only
 FetchContent_Declare(
     crow
     URL https://github.com/CrowCpp/Crow/archive/refs/tags/v1.2.0.tar.gz
 )
+<<<<<<< fix-issues-and-complete-implementation-17644940602424617538
+FetchContent_MakeAvailable(crow)
+# Ensure Crow::Crow and crow targets are available
+if(NOT TARGET Crow::Crow)
+    if(TARGET crow)
+        add_library(Crow::Crow ALIAS crow)
+    else()
+        add_library(crow_interface INTERFACE)
+        target_include_directories(crow_interface INTERFACE ${crow_SOURCE_DIR}/include)
+        target_link_libraries(crow_interface INTERFACE asio)
+        add_library(Crow::Crow ALIAS crow_interface)
+        add_library(crow ALIAS crow_interface)
+        target_include_directories(crow_interface INTERFACE ${asio_SOURCE_DIR}/include)
+    endif()
+=======
 FetchContent_GetProperties(crow)
 if(NOT crow_POPULATED)
     FetchContent_Populate(crow)
+>>>>>>> master
 endif()
 add_library(crow_lib INTERFACE)
 target_include_directories(crow_lib INTERFACE ${crow_SOURCE_DIR}/include)
@@ -108,6 +132,7 @@ set(COMMON_SOURCES
 
 set(BACKEND_SOURCES
     ${COMMON_SOURCES}
+    src/backend/business_logic/alert_system.cpp
     include/backend/business_logic/financial_service.hpp
     src/backend/business_logic/financial_service.cpp
     src/backend/hal/dummy_printer.cpp
@@ -126,6 +151,7 @@ target_link_libraries(supermarket_backend PRIVATE
     SQLite::SQLite3
     Crow::Crow
 )
+target_include_directories(supermarket_backend PRIVATE ${asio_SOURCE_DIR}/include)
 
 # No Qt for backend
 if(WIN32)

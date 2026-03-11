@@ -1,5 +1,6 @@
 #include <backend/api/server.hpp>
 #include <backend/dal/database.hpp>
+#include <backend/dal/dal_product.hpp>
 #include <backend/business_logic/product_service.hpp>
 #include <backend/business_logic/checkout_service.hpp>
 #include <backend/business_logic/inventory_service.hpp>
